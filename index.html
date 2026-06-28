@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarav Mehta — Front-End Developer Portfolio</title>
+<meta name="description" content="Personal portfolio of Aarav Mehta, Front-End Developer — projects, skills, education and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+  <!-- ===== APP BANNER (links to the other two Task-4 builds) ===== -->
+  <div class="app-banner">
+    Task 4 also includes a <a href="todo.html">To-Do App</a> and a <a href="products.html">Product Listing Page</a> — built with the same vanilla stack.
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">&lt;<span>AM</span>/&gt;</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary" style="display:none" id="navCta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-kicker">Front-End Developer · UI/UX</span>
+        <h1>Building <span class="grad">interfaces</span> that feel as good as they <span class="stroke">look.</span></h1>
+        <p class="lead">I'm Aarav — I design and build fast, accessible, pixel-considered web experiences using nothing but HTML, CSS and JavaScript. This site, the to‑do app, and the product catalog below are all hand-built, framework-free.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>20+</b><span>Projects Shipped</span></div>
+          <div><b>3</b><span>Years Coding</span></div>
+          <div><b>100%</b><span>Vanilla Stack</span></div>
+        </div>
+      </div>
+      <div class="hero-card chrome reveal">
+        <div class="chrome__bar">
+          <span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__dot"></span>
+          <span class="chrome__tab">about-me.js</span>
+        </div>
+        <div class="chrome__body">
+          <div class="code-line"><span class="k">const</span> developer = {</div>
+          <div class="code-line">&nbsp;&nbsp;name: <span class="s">"Aarav Mehta"</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;role: <span class="s">"Front-End Developer"</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;stack: [<span class="s">"HTML5"</span>, <span class="s">"CSS3"</span>, <span class="s">"JS"</span>],</div>
+          <div class="code-line">&nbsp;&nbsp;<span class="c">// always learning</span></div>
+          <div class="code-line">&nbsp;&nbsp;<span class="f">availableForWork</span>: <span class="k">true</span></div>
+          <div class="code-line">}<span class="typed-cursor">&nbsp;</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&h=600&fit=crop" alt="Aarav Mehta working at a laptop">
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">About Me</span>
+        <h2>Turning ideas into clean, usable code.</h2>
+        <p>I'm a front-end developer who enjoys the part most people skip: the details. Spacing that breathes, transitions that explain themselves, and forms that never make a user guess what went wrong.</p>
+        <p>Over the past three years I've worked across portfolio sites, internal tools, and e‑commerce catalogs — always with a focus on performance and accessibility, and almost always without a framework, because understanding the fundamentals is what makes the frameworks make sense.</p>
+        <ul class="about-list">
+          <li>Semantic HTML5</li>
+          <li>Modern CSS (Grid/Flexbox)</li>
+          <li>ES6+ JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Accessibility (WCAG)</li>
+          <li>Performance Tuning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" style="background:var(--bg-elevated)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Skills</span>
+        <h2>The toolkit behind every build.</h2>
+        <p>A focused stack, used deeply rather than broadly.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--lvl:95%"><div class="icon">🧱</div><h4>HTML5</h4><div class="skill-bar"><i></i></div><span class="lvl-label">95% — Semantic & accessible markup</span></div>
+        <div class="skill-card reveal" style="--lvl:92%"><div class="icon">🎨</div><h4>CSS3</h4><div class="skill-bar"><i></i></div><span class="lvl-label">92% — Grid, Flexbox, animations</span></div>
+        <div class="skill-card reveal" style="--lvl:90%"><div class="icon">⚡</div><h4>JavaScript (ES6+)</h4><div class="skill-bar"><i></i></div><span class="lvl-label">90% — DOM, async, modular code</span></div>
+        <div class="skill-card reveal" style="--lvl:80%"><div class="icon">📱</div><h4>Responsive Design</h4><div class="skill-bar"><i></i></div><span class="lvl-label">80% — Mobile-first layouts</span></div>
+        <div class="skill-card reveal" style="--lvl:75%"><div class="icon">🧩</div><h4>UI/UX Design</h4><div class="skill-bar"><i></i></div><span class="lvl-label">75% — Wireframes to polish</span></div>
+        <div class="skill-card reveal" style="--lvl:78%"><div class="icon">🔧</div><h4>Git & Tooling</h4><div class="skill-bar"><i></i></div><span class="lvl-label">78% — Version control, build setups</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Projects</span>
+        <h2>Selected work, including this Task 4 submission.</h2>
+        <p>Three connected builds — a portfolio, a productivity app, and a storefront — all vanilla HTML/CSS/JS.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>To-Do App</b></div>
+          <div class="project-info">
+            <h4>Task Manager</h4>
+            <p>Add, edit, complete and filter tasks with live search and persistent Local Storage.</p>
+            <div class="tag-row"><span class="tag">JS</span><span class="tag">LocalStorage</span><span class="tag">CSS Grid</span></div>
+            <div class="project-links"><a href="todo.html">Open App →</a></div>
+          </div>
+        </article>
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>Product Catalog</b></div>
+          <div class="project-info">
+            <h4>Product Listing Page</h4>
+            <p>20+ products with live search, category/price/rating filters and five sort modes.</p>
+            <div class="tag-row"><span class="tag">JS</span><span class="tag">Filtering</span><span class="tag">Sorting</span></div>
+            <div class="project-links"><a href="products.html">Open Catalog →</a></div>
+          </div>
+        </article>
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>This Portfolio</b></div>
+          <div class="project-info">
+            <h4>Personal Portfolio</h4>
+            <p>Glassmorphism nav, dark/light themes, scroll animations — the page you're on now.</p>
+            <div class="tag-row"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Vanilla JS</span></div>
+            <div class="project-links"><a href="#home">Back to Top →</a></div>
+          </div>
+        </article>
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>Weather Widget</b></div>
+          <div class="project-info">
+            <h4>Forecast Card</h4>
+            <p>A compact glassmorphic widget fetching live conditions with graceful error states.</p>
+            <div class="tag-row"><span class="tag">Fetch API</span><span class="tag">UI</span></div>
+            <div class="project-links"><a href="#contact">Request Source →</a></div>
+          </div>
+        </article>
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>Expense Tracker</b></div>
+          <div class="project-info">
+            <h4>Budget Board</h4>
+            <p>A category-based spending tracker with animated totals and CSV export.</p>
+            <div class="tag-row"><span class="tag">Charts</span><span class="tag">LocalStorage</span></div>
+            <div class="project-links"><a href="#contact">Request Source →</a></div>
+          </div>
+        </article>
+        <article class="project-card chrome reveal">
+          <div class="project-thumb"><b>Landing Kit</b></div>
+          <div class="project-info">
+            <h4>SaaS Landing Page</h4>
+            <p>A conversion-focused landing template with reusable section components.</p>
+            <div class="tag-row"><span class="tag">CSS Variables</span><span class="tag">Animation</span></div>
+            <div class="project-links"><a href="#contact">Request Source →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" style="background:var(--bg-elevated)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Education</span>
+        <h2>Where the fundamentals came from.</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="date">2025 — Present</span>
+          <h4>Front-End Development Internship</h4>
+          <div class="org">ApexPlanet Software Pvt. Ltd.</div>
+          <p>Hands-on internship covering HTML5, CSS3, JavaScript fundamentals through to full responsive builds — this site is Task 4 of that program.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2022 — 2025</span>
+          <h4>B.Tech, Computer Science</h4>
+          <div class="org">Indian Institute of Information Technology</div>
+          <p>Coursework in data structures, web technologies, and software engineering principles.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2020 — 2022</span>
+          <h4>Higher Secondary, Science</h4>
+          <div class="org">Delhi Public School</div>
+          <p>Focused on Mathematics and Computer Science as core subjects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's build something.</h2>
+        <p style="color:var(--text-muted);margin:14px 0 28px;">Have a project in mind, or just want to say hi? My inbox is open.</p>
+        <div class="info-row"><span class="ico">✉️</span><span>aarav.mehta.dev@gmail.com</span></div>
+        <div class="info-row"><span class="ico">📍</span><span>Coimbatore, Tamil Nadu, India</span></div>
+        <div class="info-row"><span class="ico">💼</span><span>Open to internships & freelance work</span></div>
+        <div class="social-row">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+        </div>
+      </div>
+      <form class="contact-form chrome reveal" id="contactForm" novalidate>
+        <div class="chrome__bar"><span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__tab">send-message.form</span></div>
+        <div class="chrome__body" style="padding:26px;">
+          <div class="form-grid">
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+            <div class="field full"><label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="What's this about?" required></div>
+            <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me a bit more..." required></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer container">
+    <p>© 2026 Aarav Mehta. Built with HTML, CSS &amp; JavaScript for ApexPlanet Internship — Task 4.</p>
+    <div class="links">
+      <a href="todo.html">To-Do App</a>
+      <a href="products.html">Product Listing</a>
+      <a href="#home">Back to Top</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

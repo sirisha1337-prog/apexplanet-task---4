@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do App — Task 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="todo.css">
+</head>
+<body data-theme="light">
+
+  <div class="container app-shell">
+    <div class="app-topbar">
+      <a href="index.html" class="logo">&lt;<span>AM</span>/&gt;</a>
+      <nav>
+        <a href="index.html">Portfolio</a>
+        <a href="products.html">Product Catalog</a>
+        <a href="#" id="themeToggleTodo">Toggle Theme</a>
+      </nav>
+    </div>
+
+    <div class="todo-card chrome reveal is-visible">
+      <div class="chrome__bar">
+        <span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__dot"></span>
+        <span class="chrome__tab">todo-app.js</span>
+      </div>
+      <div class="chrome__body">
+
+        <div class="todo-header">
+          <h1>Stay on top of your day</h1>
+          <p>Add, edit, complete and filter your tasks — everything saves automatically.</p>
+        </div>
+
+        <form class="todo-add" id="todoForm">
+          <input type="text" id="todoInput" placeholder="What do you need to do?" autocomplete="off" required maxlength="120">
+          <button type="submit">Add Task</button>
+        </form>
+
+        <div class="todo-toolbar">
+          <div class="todo-search">
+            <span class="ico">🔍</span>
+            <input type="text" id="todoSearch" placeholder="Search tasks...">
+          </div>
+          <div class="todo-filters" id="todoFilters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+          </div>
+        </div>
+
+        <ul class="todo-list" id="todoList"></ul>
+        <div class="todo-empty" id="todoEmpty" hidden>
+          <span class="big">📝</span>
+          Nothing here yet. Add your first task above.
+        </div>
+
+        <div class="todo-footer">
+          <span id="todoCounter">0 tasks left</span>
+          <button id="clearCompleted">Clear completed</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+  <script src="todo.js"></script>
+</body>
+</html>
